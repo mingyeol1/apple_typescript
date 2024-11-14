@@ -1,14 +1,6 @@
-function 가능하냐(x, y, z) {
-    var jum = 0;
-    x += jum;
-    if (y === true) {
-        jum += 500;
+var 변경 = document.querySelectorAll('.naver');
+변경.forEach(function (e) {
+    if (e instanceof HTMLAnchorElement) {
+        e.href = 'https://kakao.com';
     }
-    if (z == '상') {
-        jum += 100;
-    }
-    if (jum >= 600) {
-        return console.log('결혼가능');
-    }
-}
-가능하냐(100, false, '상');
+});

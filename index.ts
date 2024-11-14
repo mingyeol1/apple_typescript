@@ -1,22 +1,12 @@
-function 가능하냐(x : number, y : boolean , z : string) :string | void {
+let 변경 = document.querySelectorAll('.naver');
 
-    let jum : number = 0;
+변경.forEach((e)=>{
+   if (e instanceof HTMLAnchorElement) {
+       e.href = 'https://kakao.com';
+   }
+})
 
-    x += jum;
-    if(y === true ){
-        jum += 500;
-    }
-    
-    if(z == '상'){
-        jum += 100;
-    }
 
-    if(jum >= 600){
-        return console.log('가능')
-    }
 
-}
-
-가능하냐(500, true, '상');
 
 
