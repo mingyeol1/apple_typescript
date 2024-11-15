@@ -1,6 +1,3 @@
-var 변경 = document.querySelectorAll('.naver');
-변경.forEach(function (e) {
-    if (e instanceof HTMLAnchorElement) {
-        e.href = 'https://kakao.com';
-    }
-});
+var 학생 = { name: 'kim' };
+var 선생 = { name: 'kim', age: 20 };
+
