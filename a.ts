@@ -1,0 +1,1 @@
+export type obj = (a? :object) => void
