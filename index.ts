@@ -1,20 +1,4 @@
-function 함수(...x : (string | number)[]) : [string[],number[]]{
-  
-  let str : string[] = [];
-  let num : number[] = []; 
+type FirstItem<T> = T extends [string] ? string[] : any;
 
-
-  x.forEach((a)=>{
-    if(typeof a === 'string'){
-      str.push(a)
-    }else{
-      num.push(a)
-    }
-  })
-
-  
-  
-  return  [str,num];
-}
-
-console.log( 함수('123',1,3,'2'));
+let age1 :FirstItem<string[]>;
+let age2 :FirstItem<number>; 
